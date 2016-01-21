@@ -17,7 +17,10 @@
 		5B8A073A1C510DF400DC722B /* Client500UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8A07391C510DF400DC722B /* Client500UITests.m */; };
 		5B8A07491C5110C600DC722B /* CLPhotoCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8A07481C5110C600DC722B /* CLPhotoCategory.m */; };
 		5B8A074E1C5114D600DC722B /* CLPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8A074D1C5114D600DC722B /* CLPhoto.m */; };
+		5B8A07551C5124D600DC722B /* TSNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8A07541C5124D600DC722B /* TSNetworkManager.m */; };
 		5B8A075A1C51252600DC722B /* NSDictionary+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8A07571C51252600DC722B /* NSDictionary+JSON.m */; };
+		5B8A07631C5131C400DC722B /* CLAPIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8A07621C5131C400DC722B /* CLAPIHelper.m */; };
+		5B8A07691C5133CD00DC722B /* TSNetworkManager+Photos.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8A07681C5133CD00DC722B /* TSNetworkManager+Photos.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,8 +62,13 @@
 		5B8A074B1C51112200DC722B /* Client500-PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Client500-PrefixHeader.pch"; sourceTree = "<group>"; };
 		5B8A074C1C5114D600DC722B /* CLPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CLPhoto.h; path = Model/CLPhoto.h; sourceTree = "<group>"; };
 		5B8A074D1C5114D600DC722B /* CLPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CLPhoto.m; path = Model/CLPhoto.m; sourceTree = "<group>"; };
+		5B8A07531C5124D600DC722B /* TSNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSNetworkManager.h; sourceTree = "<group>"; };
+		5B8A07541C5124D600DC722B /* TSNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSNetworkManager.m; sourceTree = "<group>"; };
 		5B8A07561C51252600DC722B /* NSDictionary+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JSON.h"; sourceTree = "<group>"; };
 		5B8A07571C51252600DC722B /* NSDictionary+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JSON.m"; sourceTree = "<group>"; };
+		5B8A07611C51314000DC722B /* CLAPIHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLAPIHelper.h; sourceTree = "<group>"; };
+		5B8A07621C5131C400DC722B /* CLAPIHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLAPIHelper.m; sourceTree = "<group>"; };
+		5B8A07681C5133CD00DC722B /* TSNetworkManager+Photos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TSNetworkManager+Photos.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				5B8A075C1C51252E00DC722B /* Categories */,
+				5B8A074F1C5122E400DC722B /* Network */,
 				5B8A074A1C5110D100DC722B /* Model */,
 				5B8A07171C510DF400DC722B /* AppDelegate.h */,
 				5B8A07181C510DF400DC722B /* AppDelegate.m */,
@@ -162,6 +171,18 @@
 				5B8A074D1C5114D600DC722B /* CLPhoto.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		5B8A074F1C5122E400DC722B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5B8A07611C51314000DC722B /* CLAPIHelper.h */,
+				5B8A07621C5131C400DC722B /* CLAPIHelper.m */,
+				5B8A07531C5124D600DC722B /* TSNetworkManager.h */,
+				5B8A07541C5124D600DC722B /* TSNetworkManager.m */,
+				5B8A07681C5133CD00DC722B /* TSNetworkManager+Photos.m */,
+			);
+			name = Network;
 			sourceTree = "<group>";
 		};
 		5B8A075C1C51252E00DC722B /* Categories */ = {
@@ -304,10 +325,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B8A07631C5131C400DC722B /* CLAPIHelper.m in Sources */,
 				5B8A071C1C510DF400DC722B /* ViewController.m in Sources */,
 				5B8A07191C510DF400DC722B /* AppDelegate.m in Sources */,
+				5B8A07691C5133CD00DC722B /* TSNetworkManager+Photos.m in Sources */,
 				5B8A07161C510DF400DC722B /* main.m in Sources */,
 				5B8A075A1C51252600DC722B /* NSDictionary+JSON.m in Sources */,
+				5B8A07551C5124D600DC722B /* TSNetworkManager.m in Sources */,
 				5B8A074E1C5114D600DC722B /* CLPhoto.m in Sources */,
 				5B8A07491C5110C600DC722B /* CLPhotoCategory.m in Sources */,
 			);
