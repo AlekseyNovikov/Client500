@@ -15,6 +15,9 @@
 		5B8A07241C510DF400DC722B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B8A07221C510DF400DC722B /* LaunchScreen.storyboard */; };
 		5B8A072F1C510DF400DC722B /* Client500Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8A072E1C510DF400DC722B /* Client500Tests.m */; };
 		5B8A073A1C510DF400DC722B /* Client500UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8A07391C510DF400DC722B /* Client500UITests.m */; };
+		5B8A07491C5110C600DC722B /* CLPhotoCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8A07481C5110C600DC722B /* CLPhotoCategory.m */; };
+		5B8A074E1C5114D600DC722B /* CLPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8A074D1C5114D600DC722B /* CLPhoto.m */; };
+		5B8A075A1C51252600DC722B /* NSDictionary+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8A07571C51252600DC722B /* NSDictionary+JSON.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,13 @@
 		5B8A07351C510DF400DC722B /* Client500UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Client500UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B8A07391C510DF400DC722B /* Client500UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Client500UITests.m; sourceTree = "<group>"; };
 		5B8A073B1C510DF500DC722B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B8A07471C5110C600DC722B /* CLPhotoCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CLPhotoCategory.h; path = Model/CLPhotoCategory.h; sourceTree = "<group>"; };
+		5B8A07481C5110C600DC722B /* CLPhotoCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CLPhotoCategory.m; path = Model/CLPhotoCategory.m; sourceTree = "<group>"; };
+		5B8A074B1C51112200DC722B /* Client500-PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Client500-PrefixHeader.pch"; sourceTree = "<group>"; };
+		5B8A074C1C5114D600DC722B /* CLPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CLPhoto.h; path = Model/CLPhoto.h; sourceTree = "<group>"; };
+		5B8A074D1C5114D600DC722B /* CLPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CLPhoto.m; path = Model/CLPhoto.m; sourceTree = "<group>"; };
+		5B8A07561C51252600DC722B /* NSDictionary+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JSON.h"; sourceTree = "<group>"; };
+		5B8A07571C51252600DC722B /* NSDictionary+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JSON.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +111,8 @@
 		5B8A07131C510DF400DC722B /* Client500 */ = {
 			isa = PBXGroup;
 			children = (
+				5B8A075C1C51252E00DC722B /* Categories */,
+				5B8A074A1C5110D100DC722B /* Model */,
 				5B8A07171C510DF400DC722B /* AppDelegate.h */,
 				5B8A07181C510DF400DC722B /* AppDelegate.m */,
 				5B8A071A1C510DF400DC722B /* ViewController.h */,
@@ -110,6 +122,7 @@
 				5B8A07221C510DF400DC722B /* LaunchScreen.storyboard */,
 				5B8A07251C510DF400DC722B /* Info.plist */,
 				5B8A07141C510DF400DC722B /* Supporting Files */,
+				5B8A074B1C51112200DC722B /* Client500-PrefixHeader.pch */,
 			);
 			path = Client500;
 			sourceTree = "<group>";
@@ -138,6 +151,26 @@
 				5B8A073B1C510DF500DC722B /* Info.plist */,
 			);
 			path = Client500UITests;
+			sourceTree = "<group>";
+		};
+		5B8A074A1C5110D100DC722B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5B8A07471C5110C600DC722B /* CLPhotoCategory.h */,
+				5B8A07481C5110C600DC722B /* CLPhotoCategory.m */,
+				5B8A074C1C5114D600DC722B /* CLPhoto.h */,
+				5B8A074D1C5114D600DC722B /* CLPhoto.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5B8A075C1C51252E00DC722B /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				5B8A07561C51252600DC722B /* NSDictionary+JSON.h */,
+				5B8A07571C51252600DC722B /* NSDictionary+JSON.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +235,7 @@
 		5B8A07091C510DF400DC722B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = CL;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Aleksey Novikov";
 				TargetAttributes = {
@@ -273,6 +307,9 @@
 				5B8A071C1C510DF400DC722B /* ViewController.m in Sources */,
 				5B8A07191C510DF400DC722B /* AppDelegate.m in Sources */,
 				5B8A07161C510DF400DC722B /* main.m in Sources */,
+				5B8A075A1C51252600DC722B /* NSDictionary+JSON.m in Sources */,
+				5B8A074E1C5114D600DC722B /* CLPhoto.m in Sources */,
+				5B8A07491C5110C600DC722B /* CLPhotoCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +448,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/Client500/Client500-PrefixHeader.pch";
 				INFOPLIST_FILE = Client500/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aleksey.novikov.Client500;
@@ -422,6 +460,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/Client500/Client500-PrefixHeader.pch";
 				INFOPLIST_FILE = Client500/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aleksey.novikov.Client500;

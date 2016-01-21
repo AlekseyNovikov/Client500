@@ -1,0 +1,19 @@
+//
+//  Client500-PrefixHeader.pch
+//  Client500
+//
+//  Created by Aleksey Novikov on 21/01/16.
+//  Copyright © 2016 Aleksey Novikov. All rights reserved.
+//
+
+#ifndef Client500_PrefixHeader_pch
+#define Client500_PrefixHeader_pch
+
+#include <UIKit/UIKit.h>
+
+#import "CLAPIHelper.h"
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* Client500_PrefixHeader_pch */
