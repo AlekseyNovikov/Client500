@@ -10,7 +10,6 @@
 		318EF5ED9E02AF3BC1CB800C /* libPods-Client500.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4E41C5A2604FF26E8AA3CB9 /* libPods-Client500.a */; };
 		5B8A07161C510DF400DC722B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8A07151C510DF400DC722B /* main.m */; };
 		5B8A07191C510DF400DC722B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8A07181C510DF400DC722B /* AppDelegate.m */; };
-		5B8A071C1C510DF400DC722B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8A071B1C510DF400DC722B /* ViewController.m */; };
 		5B8A071F1C510DF400DC722B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B8A071D1C510DF400DC722B /* Main.storyboard */; };
 		5B8A07211C510DF400DC722B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B8A07201C510DF400DC722B /* Assets.xcassets */; };
 		5B8A07241C510DF400DC722B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B8A07221C510DF400DC722B /* LaunchScreen.storyboard */; };
@@ -22,6 +21,12 @@
 		5B8A075A1C51252600DC722B /* NSDictionary+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8A07571C51252600DC722B /* NSDictionary+JSON.m */; };
 		5B8A07631C5131C400DC722B /* CLAPIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8A07621C5131C400DC722B /* CLAPIHelper.m */; };
 		5B8A07691C5133CD00DC722B /* TSNetworkManager+Photos.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8A07681C5133CD00DC722B /* TSNetworkManager+Photos.m */; };
+		5B8A07711C514E1C00DC722B /* CLCategoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8A07701C514E1C00DC722B /* CLCategoriesViewController.m */; };
+		5B8A07741C515ACB00DC722B /* CLCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8A07731C515ACB00DC722B /* CLCategoryCell.m */; };
+		5B8A07791C51857900DC722B /* CLPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8A07781C51857900DC722B /* CLPhotosViewController.m */; };
+		5B8A077C1C525F8B00DC722B /* CLPhotosTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8A077B1C525F8B00DC722B /* CLPhotosTableDataSource.m */; };
+		5B8A07831C5267EC00DC722B /* CLPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8A07821C5267EC00DC722B /* CLPhotoCell.m */; };
+		5B8A07861C526AD500DC722B /* CLTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8A07851C526AD500DC722B /* CLTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +52,6 @@
 		5B8A07151C510DF400DC722B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5B8A07171C510DF400DC722B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5B8A07181C510DF400DC722B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5B8A071A1C510DF400DC722B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5B8A071B1C510DF400DC722B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5B8A071E1C510DF400DC722B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5B8A07201C510DF400DC722B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B8A07231C510DF400DC722B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -71,6 +74,18 @@
 		5B8A07611C51314000DC722B /* CLAPIHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLAPIHelper.h; sourceTree = "<group>"; };
 		5B8A07621C5131C400DC722B /* CLAPIHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLAPIHelper.m; sourceTree = "<group>"; };
 		5B8A07681C5133CD00DC722B /* TSNetworkManager+Photos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TSNetworkManager+Photos.m"; sourceTree = "<group>"; };
+		5B8A076F1C514E1C00DC722B /* CLCategoriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CLCategoriesViewController.h; path = Controllers/CLCategoriesViewController.h; sourceTree = "<group>"; };
+		5B8A07701C514E1C00DC722B /* CLCategoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CLCategoriesViewController.m; path = Controllers/CLCategoriesViewController.m; sourceTree = "<group>"; };
+		5B8A07721C515ACB00DC722B /* CLCategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CLCategoryCell.h; path = Views/CLCategoryCell.h; sourceTree = "<group>"; };
+		5B8A07731C515ACB00DC722B /* CLCategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CLCategoryCell.m; path = Views/CLCategoryCell.m; sourceTree = "<group>"; };
+		5B8A07771C51857900DC722B /* CLPhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CLPhotosViewController.h; path = Controllers/CLPhotosViewController.h; sourceTree = "<group>"; };
+		5B8A07781C51857900DC722B /* CLPhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CLPhotosViewController.m; path = Controllers/CLPhotosViewController.m; sourceTree = "<group>"; };
+		5B8A077A1C525F8B00DC722B /* CLPhotosTableDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CLPhotosTableDataSource.h; path = Controllers/CLPhotosTableDataSource.h; sourceTree = "<group>"; };
+		5B8A077B1C525F8B00DC722B /* CLPhotosTableDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CLPhotosTableDataSource.m; path = Controllers/CLPhotosTableDataSource.m; sourceTree = "<group>"; };
+		5B8A07811C5267EC00DC722B /* CLPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CLPhotoCell.h; path = Views/CLPhotoCell.h; sourceTree = "<group>"; };
+		5B8A07821C5267EC00DC722B /* CLPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CLPhotoCell.m; path = Views/CLPhotoCell.m; sourceTree = "<group>"; };
+		5B8A07841C526AD500DC722B /* CLTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CLTableViewCell.h; path = Views/CLTableViewCell.h; sourceTree = "<group>"; };
+		5B8A07851C526AD500DC722B /* CLTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CLTableViewCell.m; path = Views/CLTableViewCell.m; sourceTree = "<group>"; };
 		D1D29A811A57D6F319B48EBB /* Pods-Client500.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Client500.release.xcconfig"; path = "Pods/Target Support Files/Pods-Client500/Pods-Client500.release.xcconfig"; sourceTree = "<group>"; };
 		F4E41C5A2604FF26E8AA3CB9 /* libPods-Client500.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Client500.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -136,11 +151,11 @@
 			children = (
 				5B8A075C1C51252E00DC722B /* Categories */,
 				5B8A074F1C5122E400DC722B /* Network */,
+				5B8A076D1C514D6A00DC722B /* Views */,
+				5B8A076E1C514DB800DC722B /* Controllers */,
 				5B8A074A1C5110D100DC722B /* Model */,
 				5B8A07171C510DF400DC722B /* AppDelegate.h */,
 				5B8A07181C510DF400DC722B /* AppDelegate.m */,
-				5B8A071A1C510DF400DC722B /* ViewController.h */,
-				5B8A071B1C510DF400DC722B /* ViewController.m */,
 				5B8A071D1C510DF400DC722B /* Main.storyboard */,
 				5B8A07201C510DF400DC722B /* Assets.xcassets */,
 				5B8A07221C510DF400DC722B /* LaunchScreen.storyboard */,
@@ -207,6 +222,32 @@
 				5B8A07571C51252600DC722B /* NSDictionary+JSON.m */,
 			);
 			name = Categories;
+			sourceTree = "<group>";
+		};
+		5B8A076D1C514D6A00DC722B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5B8A07841C526AD500DC722B /* CLTableViewCell.h */,
+				5B8A07851C526AD500DC722B /* CLTableViewCell.m */,
+				5B8A07721C515ACB00DC722B /* CLCategoryCell.h */,
+				5B8A07731C515ACB00DC722B /* CLCategoryCell.m */,
+				5B8A07811C5267EC00DC722B /* CLPhotoCell.h */,
+				5B8A07821C5267EC00DC722B /* CLPhotoCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		5B8A076E1C514DB800DC722B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5B8A076F1C514E1C00DC722B /* CLCategoriesViewController.h */,
+				5B8A07701C514E1C00DC722B /* CLCategoriesViewController.m */,
+				5B8A07771C51857900DC722B /* CLPhotosViewController.h */,
+				5B8A07781C51857900DC722B /* CLPhotosViewController.m */,
+				5B8A077A1C525F8B00DC722B /* CLPhotosTableDataSource.h */,
+				5B8A077B1C525F8B00DC722B /* CLPhotosTableDataSource.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		CC91B9C98D4B2D76E7187CDC /* Pods */ = {

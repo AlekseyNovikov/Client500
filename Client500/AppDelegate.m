@@ -7,8 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "TSNetworkManager.h"
-#import "CLPhotoCategory.h"
 
 @interface AppDelegate ()
 
@@ -19,10 +17,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
-    [[TSNetworkManager sharedManager] photosFromCategory:CLPhotoCategoryNude page:3 completion:^(NSArray *photos, NSError *error) {
-        
-    }];
     return YES;
 }
 

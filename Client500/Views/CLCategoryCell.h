@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CLCategoryCell.h
 //  Client500
 //
 //  Created by Aleksey Novikov on 21/01/16.
@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import  "CLTableViewCell.h"
 
-@interface ViewController : UIViewController
-
+@interface CLCategoryCell : CLTableViewCell
 
 @end
-
