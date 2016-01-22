@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-typedef NS_ENUM(NSInteger, CLPhotoCategoryName)
+typedef NS_ENUM(NSInteger, CLPhotoCategoryID)
 {
     CLPhotoCategoryUncategorized = 0,
     CLPhotoCategoryAbstract = 10,
@@ -42,14 +42,16 @@ typedef NS_ENUM(NSInteger, CLPhotoCategoryName)
 
 @interface CLPhotoCategory : NSObject
 
-@property(nonatomic, assign) CLPhotoCategoryName categoryName;
-@property(nonatomic, strong) NSString *categoryStringName;
-
+@property(nonatomic, assign) CLPhotoCategoryID categoryID;
+@property(nonatomic, strong) NSString *categoryName;
 @property(nonatomic, strong) NSArray *photos;
 
-- (instancetype)initWithDictionary:(NSDictionary *)dict;
+- (instancetype)initWithID:(CLPhotoCategoryID)categoryID;
 
-+ (NSString *)categoryStringNameForCategory:(CLPhotoCategoryName)categoryName;
++ (NSString *)categoryNameByID:(CLPhotoCategoryID)categoryID;
 
++ (NSArray *)allCategories;
+
+//- (NSArray *)fillWithPhotos
 
 @end

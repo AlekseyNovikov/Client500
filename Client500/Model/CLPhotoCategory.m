@@ -10,109 +10,119 @@
 
 @implementation CLPhotoCategory
 
-- (instancetype)initWithDictionary:(NSDictionary *)dict
+- (instancetype)initWithID:(CLPhotoCategoryID)categoryID
 {
     self = [super init];
     if (self) {
-        self.categoryName = [dict[@"category"] integerValue];
-        self.categoryStringName = [[self class] categoryStringNameForCategory:self.categoryName];
+        self.categoryID = categoryID;
+        self.categoryName = [CLPhotoCategory categoryNameByID:self.categoryID];
     }
     return self;
 }
 
-
-+ (NSString *)categoryStringNameForCategory:(CLPhotoCategoryName)categoryName
++ (NSString *)categoryNameByID:(CLPhotoCategoryID)categoryID
 {
-        NSString *categoryStringName;
-        
-        switch (categoryName) {
+        NSString *categoryName;
+        switch (categoryID) {
             case CLPhotoCategoryAbstract:
-                categoryStringName = @"Abstract";
+                categoryName = @"Abstract";
                 break;
             case CLPhotoCategoryAnimals:
-                categoryStringName = @"Animals";
+                categoryName = @"Animals";
                 break;
             case CLPhotoCategoryBlackAndWhite:
-                categoryStringName = @"Black and White";
+                categoryName = @"Black and White";
                 break;
             case CLPhotoCategoryCelbrities:
-                categoryStringName = @"Celebrities";
+                categoryName = @"Celebrities";
                 break;
             case CLPhotoCategoryCityAndArchitecture:
-                categoryStringName = @"City and Architecture";
+                categoryName = @"City and Architecture";
                 break;
             case CLPhotoCategoryCommercial:
-                categoryStringName = @"Commericial";
+                categoryName = @"Commericial";
                 break;
             case CLPhotoCategoryConcert:
-                categoryStringName = @"Concert";
+                categoryName = @"Concert";
                 break;
             case CLPhotoCategoryFamily:
-                categoryStringName = @"Family";
+                categoryName = @"Family";
                 break;
             case CLPhotoCategoryFashion:
-                categoryStringName = @"Fashion";
+                categoryName = @"Fashion";
                 break;
             case CLPhotoCategoryFilm:
-                categoryStringName = @"Film";
+                categoryName = @"Film";
                 break;
             case CLPhotoCategoryFineArt:
-                categoryStringName = @"Fine Art";
+                categoryName = @"Fine Art";
                 break;
             case CLPhotoCategoryFood:
-                categoryStringName = @"Food";
+                categoryName = @"Food";
                 break;
             case CLPhotoCategoryJournalism:
-                categoryStringName = @"Journalism";
+                categoryName = @"Journalism";
                 break;
             case CLPhotoCategoryLandscapes:
-                categoryStringName = @"Landscapes";
+                categoryName = @"Landscapes";
                 break;
             case CLPhotoCategoryMacro:
-                categoryStringName = @"Macro";
+                categoryName = @"Macro";
                 break;
             case CLPhotoCategoryNature:
-                categoryStringName = @"Nature";
+                categoryName = @"Nature";
                 break;
             case CLPhotoCategoryNude:
-                categoryStringName = @"Nude";
+                categoryName = @"Nude";
                 break;
             case CLPhotoCategoryPeople:
-                categoryStringName = @"People";
+                categoryName = @"People";
                 break;
             case CLPhotoCategoryPerformingArts:
-                categoryStringName = @"Performing Arts";
+                categoryName = @"Performing Arts";
                 break;
             case CLPhotoCategorySport:
-                categoryStringName = @"Sport";
+                categoryName = @"Sport";
                 break;
             case CLPhotoCategoryStillLife:
-                categoryStringName = @"Still Life";
+                categoryName = @"Still Life";
                 break;
             case CLPhotoCategoryStreet:
-                categoryStringName = @"Street";
+                categoryName = @"Street";
                 break;
             case CLPhotoCategoryTransportation:
-                categoryStringName = @"Transportation";
+                categoryName = @"Transportation";
                 break;
             case CLPhotoCategoryTravel:
-                categoryStringName = @"Travel";
+                categoryName = @"Travel";
                 break;
             case CLPhotoCategoryUncategorized:
-                categoryStringName = @"Uncategorized";
+                categoryName = @"Uncategorized";
                 break;
             case CLPhotoCategoryUnderwater:
-                categoryStringName = @"Underwater";
+                categoryName = @"Underwater";
                 break;
             case CLPhotoCategoryUrbanExploration:
-                categoryStringName = @"Urban Exploration";
+                categoryName = @"Urban Exploration";
                 break;
             case CLPhotoCategoryWedding:
-                categoryStringName = @"Wedding";
+                categoryName = @"Wedding";
                 break;
         }
         
-        return categoryStringName;
+        return categoryName;
+}
+
++ (NSArray *)allCategories
+{
+    NSMutableArray *categories = [NSMutableArray new];
+    for (int catID = 0; catID < 28; catID++)
+    {
+        CLPhotoCategory *category = [[CLPhotoCategory alloc]initWithID:catID];
+        [categories addObject:category];
+    }
+    
+    return categories;
 }
 
 
