@@ -6,9 +6,8 @@
 //  Copyright © 2016 Aleksey Novikov. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
-#import "CLPhotoCategory.h"
+
+@class CLPhotoCategory;
 
 
 @interface TSNetworkManager : NSObject
@@ -39,7 +38,7 @@
  *  @param page number
  *  @param completion block object to be executed when the task finishes. It's executed on main thread
  */
-- (void)photosFromCategory:(CLPhotoCategoryName)category
+- (void)photosFromCategory:(CLPhotoCategory *)category
                       page:(NSUInteger)page
                 completion:(void(^)(NSArray *photos, NSUInteger pageCount, NSError *error))completion;
 @end
