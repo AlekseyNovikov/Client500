@@ -5,6 +5,7 @@
 
 target 'Client500' do
 pod 'SDWebImage'
+pod 'NYTPhotoViewer', '~> 1.0.0'
 end
 
 target 'Client500Tests' do

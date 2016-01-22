@@ -17,4 +17,6 @@ typedef void (^TableViewCellConfigureBlock)(id cell, id row);
 
 - (NSUInteger)addNewRows:(NSArray *)rows;
 
+- (id)rowAtIndexPath:(NSIndexPath *)indexPath;
+
 @end

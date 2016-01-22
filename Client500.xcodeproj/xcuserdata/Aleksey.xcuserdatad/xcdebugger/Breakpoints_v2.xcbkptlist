@@ -6,55 +6,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Client500/TSNetworkManager+Photos.m"
-            timestampString = "475177984.183837"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "-photosFromCategory:page:completion:"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__63-[TSNetworkManager(Photos) photosFromCategory:page:completion:]_block_invoke36"
-                  moduleName = "Client500"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Aleksey/Develop/Client500/Client500/TSNetworkManager+Photos.m"
-                  timestampString = "475181135.371287"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "40"
-                  endingLineNumber = "40"
-                  offsetFromSymbolStart = "55">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__63-[TSNetworkManager(Photos) photosFromCategory:page:completion:]_block_invoke_237"
-                  moduleName = "Client500"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Aleksey/Develop/Client500/Client500/TSNetworkManager+Photos.m"
-                  timestampString = "475181135.371809"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "40"
-                  endingLineNumber = "40"
-                  offsetFromSymbolStart = "12">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Client500/Controllers/CLCategoriesViewController.m"

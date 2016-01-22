@@ -8,23 +8,47 @@
 
 #import "CLPhotoCell.h"
 #import "CLPhoto.h"
-
-@interface CLPhotoCell ()
-@property (weak, nonatomic) IBOutlet UILabel *authorLabel;
-@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
-@property (weak, nonatomic) IBOutlet UIImageView *imgPreview;
-
-@end
+///Helpers
+#import "UIImage+CLImage.h"
 
 @implementation CLPhotoCell
 
--(void)configureWithObject:(id)object
+- (void)awakeFromNib
 {
-    if ([object isKindOfClass:[CLPhoto class]]) {
-        CLPhoto *photo = object;
-        self.authorLabel.text = photo.author;
-        self.titleLabel.text = photo.title;
+	[self.imgPreview setUserInteractionEnabled:YES];
+	UITapGestureRecognizer *tapPhotoGestureRecognizer = [[UITapGestureRecognizer alloc]initWithTarget:self
+																							   action:@selector(photoTapped:)];
+	[self.imgPreview addGestureRecognizer:tapPhotoGestureRecognizer];
+
+}
+
+- (void)configureWithObject:(id)object
+{
+	if ([object isKindOfClass:[CLPhoto class]]) {
+		CLPhoto *photo = object;
+		self.authorLabel.text = photo.author;
+		self.titleLabel.text = photo.title;
+        self.imgPreview.image = [UIImage imageNamed:@"placeholder"];
+        [UIImage cl_imageWithUrl:photo.photoPreviewURL
+                      completion:^(UIImage *image, NSError *error) {
+                          self.imgPreview.image = image;
+                      }];
     }
 }
+
+
+- (void)prepareForReuse
+{
+	self.imgPreview.image = nil;
+}
+
+
+- (IBAction)photoTapped:(id)sender
+{
+	if ([self.delegate respondsToSelector:@selector(cellPhotoDidTapped:)]) {
+		[self.delegate cellPhotoDidTapped:self];
+	}
+}
+
 
 @end

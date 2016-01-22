@@ -15,18 +15,20 @@
     self = [super init];
     if (self) {
         
-        self.photoID = dict[@"id"];
-        self.author = dict[@"user"][@"username"];
-        self.title = dict[@"name"];
+        self.photoID = [dict objectForKey:@"id"];
+        NSDictionary *userDict = [dict dictionaryForKey:@"user"];
+        self.author = [userDict stringForKey:@"username"];
+        self.title = [dict stringForKey:@"name"];
+        self.photoDescription = [dict stringForKey:@"description"];
         
-        NSArray *images = dict[@"images"];
+        NSArray *images = [dict arrayForKey:@"images"];
         for (NSDictionary *imgDict in images) {
             switch ([imgDict[@"size"] integerValue]) {
                 case   CLPhotoScalePreview:
-                    self.photoPreviewURL = imgDict[@"https_url"];
+                    self.photoPreviewURL = [NSURL URLWithString:[imgDict stringForKey:@"https_url"]];
                     break;
                 case CLPhotoScalePhoto:
-                    self.photoURL = imgDict[@"https_url"];
+                    self.photoURL = [NSURL URLWithString:[imgDict stringForKey:@"https_url"]];
                     break;
                 default:
                     break;

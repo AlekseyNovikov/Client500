@@ -27,6 +27,8 @@
 		5B8A077C1C525F8B00DC722B /* CLPhotosTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8A077B1C525F8B00DC722B /* CLPhotosTableDataSource.m */; };
 		5B8A07831C5267EC00DC722B /* CLPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8A07821C5267EC00DC722B /* CLPhotoCell.m */; };
 		5B8A07861C526AD500DC722B /* CLTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8A07851C526AD500DC722B /* CLTableViewCell.m */; };
+		5B8A07891C52C24400DC722B /* CLFullScreenPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8A07881C52C24400DC722B /* CLFullScreenPhoto.m */; };
+		5B8A078C1C52DF1300DC722B /* UIImage+CLImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8A078B1C52DF1300DC722B /* UIImage+CLImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +88,10 @@
 		5B8A07821C5267EC00DC722B /* CLPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CLPhotoCell.m; path = Views/CLPhotoCell.m; sourceTree = "<group>"; };
 		5B8A07841C526AD500DC722B /* CLTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CLTableViewCell.h; path = Views/CLTableViewCell.h; sourceTree = "<group>"; };
 		5B8A07851C526AD500DC722B /* CLTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CLTableViewCell.m; path = Views/CLTableViewCell.m; sourceTree = "<group>"; };
+		5B8A07871C52C24400DC722B /* CLFullScreenPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLFullScreenPhoto.h; sourceTree = "<group>"; };
+		5B8A07881C52C24400DC722B /* CLFullScreenPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLFullScreenPhoto.m; sourceTree = "<group>"; };
+		5B8A078A1C52DF1300DC722B /* UIImage+CLImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CLImage.h"; sourceTree = "<group>"; };
+		5B8A078B1C52DF1300DC722B /* UIImage+CLImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CLImage.m"; sourceTree = "<group>"; };
 		D1D29A811A57D6F319B48EBB /* Pods-Client500.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Client500.release.xcconfig"; path = "Pods/Target Support Files/Pods-Client500/Pods-Client500.release.xcconfig"; sourceTree = "<group>"; };
 		F4E41C5A2604FF26E8AA3CB9 /* libPods-Client500.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Client500.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -195,6 +201,8 @@
 		5B8A074A1C5110D100DC722B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5B8A07871C52C24400DC722B /* CLFullScreenPhoto.h */,
+				5B8A07881C52C24400DC722B /* CLFullScreenPhoto.m */,
 				5B8A07471C5110C600DC722B /* CLPhotoCategory.h */,
 				5B8A07481C5110C600DC722B /* CLPhotoCategory.m */,
 				5B8A074C1C5114D600DC722B /* CLPhoto.h */,
@@ -220,6 +228,8 @@
 			children = (
 				5B8A07561C51252600DC722B /* NSDictionary+JSON.h */,
 				5B8A07571C51252600DC722B /* NSDictionary+JSON.m */,
+				5B8A078A1C52DF1300DC722B /* UIImage+CLImage.h */,
+				5B8A078B1C52DF1300DC722B /* UIImage+CLImage.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -330,6 +340,7 @@
 				TargetAttributes = {
 					5B8A07101C510DF400DC722B = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 66LW6K2TMC;
 					};
 					5B8A07291C510DF400DC722B = {
 						CreatedOnToolsVersion = 7.2;
@@ -442,6 +453,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B8A07631C5131C400DC722B /* CLAPIHelper.m in Sources */,
+				5B8A07891C52C24400DC722B /* CLFullScreenPhoto.m in Sources */,
 				5B8A07191C510DF400DC722B /* AppDelegate.m in Sources */,
 				5B8A07831C5267EC00DC722B /* CLPhotoCell.m in Sources */,
 				5B8A07791C51857900DC722B /* CLPhotosViewController.m in Sources */,
@@ -450,6 +462,7 @@
 				5B8A07691C5133CD00DC722B /* TSNetworkManager+Photos.m in Sources */,
 				5B8A07161C510DF400DC722B /* main.m in Sources */,
 				5B8A075A1C51252600DC722B /* NSDictionary+JSON.m in Sources */,
+				5B8A078C1C52DF1300DC722B /* UIImage+CLImage.m in Sources */,
 				5B8A07741C515ACB00DC722B /* CLCategoryCell.m in Sources */,
 				5B8A07861C526AD500DC722B /* CLTableViewCell.m in Sources */,
 				5B8A07551C5124D600DC722B /* TSNetworkManager.m in Sources */,
@@ -594,6 +607,7 @@
 			baseConfigurationReference = 1F725568AD61857B72D6652D /* Pods-Client500.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/Client500/Client500-PrefixHeader.pch";
 				INFOPLIST_FILE = Client500/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -607,6 +621,7 @@
 			baseConfigurationReference = D1D29A811A57D6F319B48EBB /* Pods-Client500.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/Client500/Client500-PrefixHeader.pch";
 				INFOPLIST_FILE = Client500/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

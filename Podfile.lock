@@ -1,12 +1,23 @@
 PODS:
+  - FLAnimatedImage (1.0.10)
+  - NYTPhotoViewer (1.0.0):
+    - NYTPhotoViewer/AnimatedGifSupport (= 1.0.0)
+    - NYTPhotoViewer/Core (= 1.0.0)
+  - NYTPhotoViewer/AnimatedGifSupport (1.0.0):
+    - FLAnimatedImage (~> 1.0.8)
+    - NYTPhotoViewer/Core
+  - NYTPhotoViewer/Core (1.0.0)
   - SDWebImage (3.7.5):
     - SDWebImage/Core (= 3.7.5)
   - SDWebImage/Core (3.7.5)
 
 DEPENDENCIES:
+  - NYTPhotoViewer (~> 1.0.0)
   - SDWebImage
 
 SPEC CHECKSUMS:
+  FLAnimatedImage: e16a1e1cef08e4c509b47e4acbe3923f65c16135
+  NYTPhotoViewer: a2fa487ccfad736a8b7ba0b1a0f2652b878b74a7
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
 
 COCOAPODS: 0.39.0
