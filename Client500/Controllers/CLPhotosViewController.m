@@ -16,7 +16,6 @@
 
 #import "TSNetworkManager.h"
 
-#import "CLFullScreenPhoto.h"
 #import <NYTPhotoViewer/NYTPhotosViewController.h>
 
 #import "UIImage+CLImage.h"
@@ -132,7 +131,7 @@
 	CLPhoto *photo = [self.datasource rowAtIndexPath:[self.photosTableView indexPathForCell:cell]];
 	photo.attributedCaptionTitle = [[NSAttributedString alloc] initWithString:photo.title attributes:@{NSForegroundColorAttributeName : [UIColor whiteColor], NSFontAttributeName : [UIFont preferredFontForTextStyle:UIFontTextStyleBody]}];
 	photo.attributedCaptionSummary = [[NSAttributedString alloc] initWithString:photo.author attributes:@{NSForegroundColorAttributeName : [UIColor whiteColor], NSFontAttributeName : [UIFont preferredFontForTextStyle:UIFontTextStyleBody]}];
-	photo.attributedCaptionCredit = [[NSAttributedString alloc] initWithString:photo.photoDescription attributes:@{NSForegroundColorAttributeName : [UIColor lightGrayColor], NSFontAttributeName : [UIFont preferredFontForTextStyle:UIFontTextStyleBody]}];
+	photo.attributedCaptionCredit = photo.photoDescription ? [[NSAttributedString alloc] initWithString:photo.photoDescription attributes:@{NSForegroundColorAttributeName : [UIColor lightGrayColor], NSFontAttributeName : [UIFont preferredFontForTextStyle:UIFontTextStyleBody]}] : nil;
 
 	NYTPhotosViewController *photosViewController = [[NYTPhotosViewController alloc] initWithPhotos:@[photo]];
 

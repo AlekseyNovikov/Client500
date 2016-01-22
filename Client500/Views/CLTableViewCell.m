@@ -10,14 +10,19 @@
 
 @implementation CLTableViewCell
 
+- (void)configureWithObject:(id)object
+{
+
+}
+
 + (UINib *)nib
 {
-    return [UINib nibWithNibName:NSStringFromClass([self class]) bundle:[NSBundle bundleForClass:[self class]]];
+	return [UINib nibWithNibName:NSStringFromClass([self class]) bundle:[NSBundle bundleForClass:[self class]]];
 }
 
 + (NSString *)cellReuseIdentifier
 {
-    return NSStringFromClass([self class]);
+	return NSStringFromClass([self class]);
 }
 
 @end
