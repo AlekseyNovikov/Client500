@@ -11,11 +11,11 @@
 
 @protocol CLPhotoCellDelegate <NSObject>
 
--(void)cellPhotoDidTapped:(CLPhotoCell *)cell;
+- (void)cellPhotoDidTapped:(CLPhotoCell *)cell;
 
 @end
 
-@interface CLPhotoCell : CLTableViewCell 
+@interface CLPhotoCell : CLTableViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel *authorLabel;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
